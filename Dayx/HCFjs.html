@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Inputs</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" id="input1" placeholder="Enter first value" />
+      <input type="text" id="input2" placeholder="Enter second value" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          let value1 = document.getElementById("input1").value;
+          let value2 = document.getElementById("input2").value;
+
+          console.log("Value 1:", value1);
+          console.log("Value 2:", value2);
+        });
+    </script>
+  </body>
+</html>
