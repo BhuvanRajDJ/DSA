@@ -5,13 +5,13 @@ const r1 = readline.createInterface({
   output: process.stdout,
 });
 
-r1.question("Enter the number: ", (input) => {
+r1.question("Enter the number: ", function(input) => {
   let inputstr = input.split(" ");
   let n1 = parseFloat(inputstr[0]);
   let n2 = parseFloat(inputstr[1]);
   console.log(n1);
   console.log(n2);
-  r1.close();
+  
   let ht = 0;
   let hcf = 1;
   if (n1 > n1) {
